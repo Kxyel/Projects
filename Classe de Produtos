@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace APITest.Models
+{
+    public class Produtos
+    {
+        public int id_Produto { get; set; }
+        public string ds_Produto { get; set; }
+        public int qt_Produto { get; set; }
+        public float vl_Produto { get; set; }
+
+        public Produtos()
+        {
+
+        }
+        public Produtos(int id, string nome, int quantidade, float valor)
+        {
+            id_Produto = id;
+            ds_Produto = nome;
+            qt_Produto = quantidade;
+            vl_Produto = valor;
+        }
+    }
+}
